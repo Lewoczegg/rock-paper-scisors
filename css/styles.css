@@ -10,7 +10,8 @@ body {
 
 h1,
 h2,
-h3
+h3,
+p
  {
     color: white;
 }
@@ -44,6 +45,7 @@ h3 {
 }
 
 .weapon p {
+    color: black;
     font-size: 25px;
     font-weight: bold;
     margin-top: 10px;
@@ -58,5 +60,13 @@ h3 {
     transform: scale(1.1);
     border: 5px solid gold;
     transition: all 0.2s;
+}
+
+.score {
+    font-size: 45px;
+}
+
+.round-information {
+    font-size: 30px;
 }
 

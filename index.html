@@ -5,16 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <h1>Rock Paper Scisors</h1>
     <h2>First to five wins</p>
     <h3>Choose your weapon</h2>
-    <script src="js/index.js"></script>
     <div class="weapons-container">
         <div class="weapon">
-            <img class="weapon-image" src="/images/fist.png" alt="An image of rock">
+            <img class="weapon-image" src="images/fist.png" alt="An image of rock">
             <p>Rock</p>
         </div>
         <div class="weapon">
@@ -26,5 +25,8 @@
             <p>Scisors</p>
         </div>
     </div>
+    <p class="score">Current score: <span id="player-score">0</span> - <span id="computer-score">0</span></p>
+    <p class="round-information"></p>
 </body>
+<script src="js/index.js"></script>
 </html>
