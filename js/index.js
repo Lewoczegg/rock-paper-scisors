@@ -2,7 +2,10 @@ let playerWins = 0;
 let computerWins = 0;
 let playerScore = document.querySelector('#player-score');
 let comuterScore = document.querySelector('#computer-score');
-let information = document.querySelector('.round-information')
+let information = document.querySelector('.round-information');
+
+let playAgainBtn = document.querySelector('.play-again-btn');
+playAgainBtn.addEventListener('click', restartGame);
 
 let weapons = document.querySelectorAll('.weapon');
     weapons.forEach((weapon) => {
@@ -61,9 +64,21 @@ function playRound(playerSelection, computerSelection) {
 
     if(playerWins === 5) {
         information.textContent = 'You won the match';
+        playAgainBtn.style.visibility = 'visible';
     } else if (computerWins === 5) {
         information.textContent = 'You lost the match';
+        playAgainBtn.style.visibility = 'visible';
     }
+}
+
+function restartGame() {
+    console.log('ok');
+    playerWins = 0;
+    computerWins = 0;
+    playerScore.textContent = 0;
+    comuterScore.textContent = 0;
+    information.textContent = '';
+    playAgainBtn.style.visibility = 'hidden';
 }
 
 

@@ -56,7 +56,7 @@ h3 {
     width: 100%;
 }
 
-.weapon:hover {
+.weapon:hover, .play-again-btn:hover {
     transform: scale(1.1);
     border: 5px solid gold;
     transition: all 0.2s;
@@ -67,6 +67,16 @@ h3 {
 }
 
 .round-information {
+    font-size: 40px;
+}
+
+.play-again-btn {
+    border: 0;
     font-size: 30px;
+    background-color: white;
+    padding: 10px 100px;
+    font-weight: bold;
+    border-radius: 25px;
+    visibility: hidden;
 }
 
